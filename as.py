@@ -997,17 +997,17 @@ def tnx():
   print(" Chacking Your Aproval ")
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-   httpCaht = requests.get("https://github.com/Malikamir12/Boos1/edit/main/Boos.txt").text
+    httpCaht = requests.get("https://github.com/Malikamir12/Boos1/edit/main/Boos.txt").text
     if id in httpCaht:
-     print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
+      print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
       time.sleep(0.5)
       pass
     else:
       
-     print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
-     print("    Send payment to Admin and get aproval"); time.sleep(2)
-     os.system('xdg-open https://wa.me/+923110346691')
+      print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
+      print("    Send payment to Admin and get aproval"); time.sleep(2)
+      os.system('xdg-open https://wa.me/+923110346691')
       time.sleep(2)
       sys.exit()
   except:
